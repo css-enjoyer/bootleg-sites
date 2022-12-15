@@ -82,6 +82,7 @@ body {
   cursor: pointer;
   color: white;
   background-color: #1D9BF0;
+  border: none;
   transition: 0.1s ease-in-out;
 }
 .main .nav-section .wrapper .twt-btn:hover {
@@ -126,4 +127,41 @@ body {
   height: 500px;
   border: 1px solid lime;
   margin: 100px 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main {
+    grid-template-columns: 1fr 5fr;
+  }
+  .main .nav-section {
+    margin-left: auto;
+  }
+  .main .nav-section .wrapper {
+    margin-left: 125px;
+  }
+  .main .nav-section .wrapper .nav-icons {
+    margin: 0 !important;
+  }
+  .main .nav-section .wrapper .hide-span {
+    display: none;
+  }
+  .main .nav-section .wrapper .twt-btn {
+    margin-left: 15px;
+    height: 60px;
+    width: 60px;
+  }
+  .main .nav-section .wrapper .user-box-popup img {
+    margin-left: 5px;
+  }
+  .main .nav-section .wrapper .user-box-popup i, .main .nav-section .wrapper .user-box-popup p {
+    display: none;
+  }
+  .main .trends-section {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main {
+    grid-template-columns: 85px 1fr;
+  }
 }/*# sourceMappingURL=style.css.map */

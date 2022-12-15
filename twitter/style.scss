@@ -82,6 +82,7 @@ body {
                 cursor: pointer;
                 color: white;
                 background-color: #1D9BF0;
+                border: none;
                 transition: .1s ease-in-out;
                 &:hover {
                     background-color: #1989d3;
@@ -131,5 +132,48 @@ body {
 
             margin: 100px 0;
         }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .main {
+        grid-template-columns: 1fr 5fr;
+
+        .nav-section {
+            margin-left: auto;
+            .wrapper {
+                margin-left: 125px;
+                .nav-icons {
+                    margin: 0 !important;
+                }
+                .hide-span {
+                    display: none;
+                }
+                .twt-btn {
+                    margin-left: 15px;
+                    height: 60px;
+                    width: 60px;
+                }
+                .user-box-popup {
+                    img {
+                        margin-left: 5px;
+                    }
+                    i, p {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .trends-section {
+            display: none;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main {
+        grid-template-columns: 85px 1fr;
     }
 }
