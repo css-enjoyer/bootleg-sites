@@ -7,6 +7,9 @@
     <title>Home / Twitter</title>
     <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
     <link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/14074f687d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,18 +17,31 @@
         
         <div class="nav-section">
             <div class="wrapper">
-                <div class="header-block">Logo</div>
+                <div class="header-block"><i class="fa-brands fa-twitter"></i></div>
                 <ul>
-                    <li>Home</li>
-                    <li>Explore</li>
-                    <li>Notifications</li>
-                    <li>Messages</li>
-                    <li>Bookmarks</li>
-                    <li>Lists</li>
-                    <li>Profile</li>
-                    <li>More</li>
+                    <li><a href="" class="nav-links home"><i class="fa-solid nav-icons fa-house"></i>Home</a></li>
+                    <li><a href="" class="nav-links"><i class="fa-solid nav-icons fa-hashtag"></i> Explore</a></li>
+                    <li><a href="" class="nav-links"><i class="fa-solid nav-icons fa-bell"></i> Notifications</a></li>
+                    <li><a href="" class="nav-links"><i class="fa-solid nav-icons fa-envelope"></i> Messages</a></li>
+                    <li><a href="" class="nav-links"><i class="fa-solid nav-icons fa-bookmark"></i> Bookmarks</a></li>
+                    <li><a href="" class="nav-links"><i class="fa-solid nav-icons fa-clipboard-list"></i> Lists</a></li>
+                    <li><a href="" class="nav-links"><i class="fa-solid nav-icons fa-user"></i> Profile </a></li>
+                    <li><a href="" class="nav-links"><i class="fa-solid nav-icons fa-ellipsis"></i> More</a></li>
                 </ul>
                 <button class="twt-btn">Tweet</button>
+
+                <div class="user-box-popup">
+                    <div>
+                        <img src="">
+                    </div>
+                    <div>
+                        <p>user</p>
+                        <p>@username</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid nav-icons fa-ellipsis"></i>
+                    </div>
+                </div>
             </div>
         </div>
 

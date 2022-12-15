@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -32,29 +33,49 @@ body {
   justify-content: center;
 }
 .main .nav-section .wrapper {
-  margin-top: -90px;
-  width: 70%;
-  height: 80%;
+  padding-top: 20px;
+  width: 80%;
+  height: 100%;
+  border: 1px solid red;
 }
-.main .nav-section .header-block {
+.main .nav-section .wrapper .header-block {
   height: unset;
   width: unset;
-  margin-bottom: 30px;
-}
-.main .nav-section li, .main .nav-section .header-block {
-  padding-left: 30px;
-}
-.main .nav-section li {
-  font-size: 1.3rem;
-  list-style-type: none;
   margin-bottom: 20px;
 }
-.main .nav-section .twt-btn {
-  width: 100%;
+.main .nav-section .wrapper .header-block .fa-twitter {
+  font-size: 2rem;
+}
+.main .nav-section .wrapper li, .main .nav-section .wrapper .header-block {
+  padding-left: 30px;
+}
+.main .nav-section .wrapper li {
+  font-size: 1.3rem;
+  list-style-type: none;
+  margin-bottom: 18px;
+  white-space: nowrap;
+  font-weight: 300;
+}
+.main .nav-section .wrapper li .nav-links {
+  color: white;
+}
+.main .nav-section .wrapper li .home {
+  font-weight: 600;
+}
+.main .nav-section .wrapper li .nav-icons {
+  margin-right: 20px;
+}
+.main .nav-section .wrapper .nav-links {
+  color: white;
+  text-decoration: none;
+}
+.main .nav-section .wrapper .twt-btn {
+  width: 90%;
   height: 60px;
   border-radius: 30px;
   font-weight: bold;
-  color: white;
   font-size: 1.1rem;
+  margin: 0 5%;
+  color: white;
   background-color: #1D9BF0;
 }/*# sourceMappingURL=style.css.map */
