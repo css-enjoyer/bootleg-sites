@@ -28,11 +28,11 @@ body {
     .nav-section {
         color: white;
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
         .wrapper {
-            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
             width: 80%;
             height: 100%;
             border: 1px solid red;
@@ -82,7 +82,7 @@ body {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin-top: 30%;
+                margin-top: auto;
                 padding: 0 20px;
                 & > div {
                     display: flex;
@@ -109,5 +109,9 @@ body {
                 }
             }
         }
+    }
+
+    .feed-section {
+        
     }
 }
