@@ -36,7 +36,6 @@ body {
   padding: 20px 0;
   width: 80%;
   height: 100%;
-  border: 1px solid red;
 }
 .main .nav-section .wrapper .header-block {
   height: unset;
@@ -52,12 +51,18 @@ body {
 .main .nav-section .wrapper li {
   font-size: 1.3rem;
   list-style-type: none;
-  margin-bottom: 18px;
-  white-space: nowrap;
   font-weight: 300;
+  margin: 0 0 18px -10px;
 }
 .main .nav-section .wrapper li .nav-links {
   color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  transition: 0.1s ease-in-out;
+}
+.main .nav-section .wrapper li .nav-links:hover {
+  background-color: #181818;
 }
 .main .nav-section .wrapper li .home {
   font-weight: 600;
@@ -65,19 +70,21 @@ body {
 .main .nav-section .wrapper li .nav-icons {
   margin-right: 20px;
 }
-.main .nav-section .wrapper .nav-links {
-  color: white;
-  text-decoration: none;
-}
 .main .nav-section .wrapper .twt-btn {
   width: 90%;
-  height: 60px;
+  height: 55px;
   border-radius: 30px;
   font-weight: bold;
   font-size: 1.1rem;
   margin: 0 5%;
+  margin-left: 20px;
+  cursor: pointer;
   color: white;
   background-color: #1D9BF0;
+  transition: 0.1s ease-in-out;
+}
+.main .nav-section .wrapper .twt-btn:hover {
+  background-color: #1989d3;
 }
 .main .nav-section .wrapper .user-box-popup {
   display: flex;
