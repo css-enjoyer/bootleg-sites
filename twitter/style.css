@@ -31,11 +31,12 @@ body {
   justify-content: center;
 }
 .main .nav-section .wrapper {
+  position: fixed;
   display: flex;
   flex-direction: column;
   padding: 20px 0;
-  width: 80%;
-  height: 100%;
+  width: 300px;
+  height: 650px;
 }
 .main .nav-section .wrapper .header-block {
   height: unset;
@@ -114,4 +115,15 @@ body {
 }
 .main .nav-section .wrapper .user-box-popup .fa-ellipsis {
   justify-content: flex-end;
+}
+.main .feed-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .feed-section .test {
+  width: 50px;
+  height: 500px;
+  border: 1px solid lime;
+  margin: 100px 0;
 }/*# sourceMappingURL=style.css.map */

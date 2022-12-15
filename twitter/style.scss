@@ -32,11 +32,12 @@ body {
         display: flex;
         justify-content: center;
         .wrapper {
+            position: fixed;
             display: flex;
             flex-direction: column;
             padding: 20px 0;
-            width: 80%;
-            height: 100%;
+            width: 300px;
+            height: 650px;
             .header-block {
                 height: unset;
                 width: unset;
@@ -120,6 +121,15 @@ body {
     }
 
     .feed-section {
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .test {
+            width: 50px;
+            height: 500px;
+            border: 1px solid lime;
+
+            margin: 100px 0;
+        }
     }
 }
