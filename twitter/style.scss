@@ -31,9 +31,9 @@ body {
             position: fixed;
             display: flex;
             flex-direction: column;
-            padding: 20px 0;
+            padding: 20px 0 40px 0;
             width: 300px;
-            height: 650px;
+            height: 100vh;
             .header-block {
                 height: unset;
                 width: unset;
@@ -134,11 +134,16 @@ body {
 @media only screen and (max-width: 1200px) {
     .main {
         grid-template-columns: 1fr 5fr 1fr;
-
         .nav-section {
             margin-left: auto;
             .wrapper {
                 margin-left: 125px;
+                .header-block {
+                    margin-bottom: 40px;
+                }
+                li {
+                    margin-bottom: 20px;
+                }
                 .nav-icons {
                     margin: 0 !important;
                 }
@@ -151,6 +156,7 @@ body {
                     width: 60px;
                 }
                 .user-box-popup {
+                    margin-top: auto;
                     img {
                         margin-left: 5px;
                     }
