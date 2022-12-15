@@ -15,7 +15,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr 1.2fr;
 }
-.main div {
+.maindiv {
   height: 100vh;
   width: 100%;
 }
@@ -78,4 +78,33 @@ body {
   margin: 0 5%;
   color: white;
   background-color: #1D9BF0;
+}
+.main .nav-section .wrapper .user-box-popup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30%;
+  padding: 0 20px;
+}
+.main .nav-section .wrapper .user-box-popup > div {
+  display: flex;
+}
+.main .nav-section .wrapper .user-box-popup img {
+  margin-top: 5px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.main .nav-section .wrapper .user-box-popup p:first-child {
+  margin-top: 5px;
+  margin-bottom: -5px;
+  font-weight: 900;
+}
+.main .nav-section .wrapper .user-box-popup p:nth-child(2) {
+  font-size: 0.9rem;
+  color: rgb(92, 92, 92);
+}
+.main .nav-section .wrapper .user-box-popup .fa-ellipsis {
+  justify-content: flex-end;
 }/*# sourceMappingURL=style.css.map */
