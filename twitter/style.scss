@@ -17,7 +17,7 @@ body {
     height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr 1.2fr;
+    grid-template-columns: .9fr 1.65fr 1.2fr;
     // Main Section Dividers
     &div {
         height: 100vh;
@@ -127,20 +127,20 @@ body {
             height: 60px;
             display: flex;
             align-items: center;
-            padding-left: 15px;
+            padding: 0 15px;
             font-weight: 600;
             font-size: 1.25rem;
+            justify-content: space-between;
         }
         // To do, make header-block "Home" fixed 
         .tweet-block {
             height: 118px;
             border-bottom: 1px solid var(--twt-brdr);
             .tweet-write {
-                border: 1px solid red;
                 height: 60px;
                 display: flex;
                 align-items: center;
-                padding-left: 10px;
+                padding: 0 10px;
                 img {
                     width: 50px;
                     height: 50px;
@@ -151,10 +151,34 @@ body {
                     background-color: transparent;
                     outline: none;
                     border: none;
+                    width: 100%;
                     font-size: 1.25rem;
                 }
             }
             .tweet-btns {
+                height: 58px;
+                padding: 0 18px 0 76px;
+                display: flex;
+                gap: 21px;
+                align-items: center;
+                button {
+                    background-color: transparent;
+                    border: none;
+                    i {
+                        color: var(--twt-clr);
+                        font-size: 1rem;
+                    }
+                }
+                .tweet-btn2 {
+                    background-color: var(--twt-clr);
+                    width: 76px;
+                    height: 36px;
+                    border-radius: 20px;
+                    font-weight: 900;
+                    font-size: .9rem;
+                    justify-self: flex-end;
+                    margin-left: auto;
+                }
             }
             
         }
