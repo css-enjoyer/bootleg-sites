@@ -131,9 +131,16 @@ body {
             font-weight: 600;
             font-size: 1.25rem;
             justify-content: space-between;
+            position: fixed;
+            width: 43.4vw;
+            background: rgba(0, 0, 0, 0.59);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8.2px);
+            z-index: 999;
         }
         // To do, make header-block "Home" fixed 
         .tweet-block {
+            margin-top: 60px;
             height: 118px;
             border-bottom: 1px solid var(--twt-brdr);
             .tweet-write {
