@@ -8,6 +8,7 @@
 :root {
     --twt-clr: #1D9BF0;
     --twt-brdr: rgb(51, 51, 51);
+    --twt-hover: rgb(8, 8, 8);
 }
 body {
     background-color: black;
@@ -189,11 +190,13 @@ body {
             }
             
         }
-        .test {
-            width: 50px;
+        .tweets {
+            width: 100%;
             height: 500px;
-            border: 1px solid blue;
-            margin: 100px 0;
+            border-bottom: 1px solid var(--twt-brdr);
+        }
+        .tweets:hover {
+            background-color: var(--twt-hover);
         }
     }
 }
