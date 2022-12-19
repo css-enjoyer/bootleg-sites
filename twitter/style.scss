@@ -9,6 +9,7 @@
     --twt-clr: #1D9BF0;
     --twt-brdr: rgb(51, 51, 51);
     --twt-hover: rgb(8, 8, 8);
+    --twt-usrname: rgb(92, 92, 92);
 }
 body {
     background-color: black;
@@ -111,7 +112,7 @@ body {
                 }
                 & p:nth-child(2) {
                     font-size: .9rem;
-                    color: rgb(92, 92, 92);
+                    color: var(--twt-usrname);
                 }
                 .fa-ellipsis {
                     justify-content: flex-end;
@@ -119,7 +120,11 @@ body {
             }
         }
     }
-
+    @mixin dp-size($size) {
+        width: $size;
+        height: $size;
+        border-radius: 50%;
+    }
     .feed-section {
         display: flex;
         flex-direction: column;
@@ -133,7 +138,7 @@ body {
             font-size: 1.25rem;
             justify-content: space-between;
             position: fixed;
-            width: 43.4vw;
+            width: 43.3vw;
             background: rgba(0, 0, 0, 0.59);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(8.2px);
@@ -150,9 +155,7 @@ body {
                 align-items: center;
                 padding: 0 10px;
                 img {
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50%;
+                    @include dp-size(50px);
                     margin-right: 15px;
                 }
                 input[type="text"] {
@@ -192,8 +195,54 @@ body {
         }
         .tweets {
             width: 100%;
-            height: 500px;
+            max-height: 500px;
+            min-height: min-content;
             border-bottom: 1px solid var(--twt-brdr);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 15px;
+            .tweets-wrapper {
+                height: 100%;
+                width: 100%;
+                border: 1px solid white;
+                display: flex;
+                .tweet-dp-wrapper {
+                    border: 1px solid red;
+                    width: min-content;
+                    height: 100%;
+                    margin-right: 12px;
+                }
+                img {
+                    @include dp-size(50px);
+                }
+                .tweet-wrapper {
+                    height: 100%;
+                    width: 100%;
+                    .user-name-wrapper {
+                        border: 1px solid lime;
+                        height: 28px;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        p {
+                            margin-left: 5px;
+                            font-weight: 200;
+                            font-size: .85rem;
+                            color: var(--twt-usrname);
+                        }
+                    }
+                    .tweet-content-wrapper {
+                        border: 1px solid lime;
+                        height: calc(100% - 56px);
+                        padding: 1px 0;
+                    }
+                    .tweet-buttons-wrapper {
+                        border: 1px solid lime;
+                        height: 28px;
+                    }
+                }
+            }
         }
         .tweets:hover {
             background-color: var(--twt-hover);
@@ -207,7 +256,7 @@ body {
         .nav-section {
             margin-left: auto;
             .wrapper {
-                margin-left: 125px;
+                margin-left: 75px;
                 .header-block {
                     margin-bottom: 40px;
                 }
