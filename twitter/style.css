@@ -237,7 +237,7 @@ body {
   font-size: 0.85rem;
   color: var(--twt-usrname);
 }
-.main .feed-section .tweets .tweets-wrapper .tweet-wrapper .user-name-wrapper i {
+.main .feed-section .tweets .tweets-wrapper .tweet-wrapper .user-name-wrapper .fa-circle {
   margin-left: 6px;
   font-size: 1px;
 }
