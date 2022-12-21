@@ -5,6 +5,10 @@
   font-family: "Open Sans", sans-serif;
   color: white;
 }
+* i, * img, * button, * h1, * h2,
+* h3, * h4, * h5, * h6 {
+  cursor: pointer;
+}
 
 :root {
   --twt-clr: #1D9BF0;
@@ -151,7 +155,7 @@ body {
   align-items: center;
   padding: 0 10px;
 }
-.main .feed-section .tweet-block .tweet-write img {
+.main .feed-section .tweet-block .tweet-write .lebron-pic {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -216,7 +220,7 @@ body {
   height: 100%;
   margin-right: 12px;
 }
-.main .feed-section .tweets .tweets-wrapper img {
+.main .feed-section .tweets .tweets-wrapper .lebron-pic {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -230,6 +234,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
+  margin-bottom: 5px;
 }
 .main .feed-section .tweets .tweets-wrapper .tweet-wrapper .user-name-wrapper .username, .main .feed-section .tweets .tweets-wrapper .tweet-wrapper .user-name-wrapper .time {
   margin-left: 6px;
@@ -250,6 +255,11 @@ body {
 }
 .main .feed-section .tweets .tweets-wrapper .tweet-wrapper .tweet-content-wrapper p {
   font-weight: 200;
+}
+.main .feed-section .tweets .tweets-wrapper .tweet-wrapper .tweet-content-wrapper img {
+  width: 90%;
+  height: 100%;
+  border-radius: 20px;
 }
 .main .feed-section .tweets .tweets-wrapper .tweet-wrapper .tweet-buttons-wrapper {
   height: 28px;
