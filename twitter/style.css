@@ -15,6 +15,7 @@
   --twt-brdr: rgb(51, 51, 51);
   --twt-hover: rgb(8, 8, 8);
   --twt-usrname: rgb(92, 92, 92);
+  --twt-search: #202327;
 }
 
 body {
@@ -281,6 +282,91 @@ body {
 }
 .main .feed-section .tweets:hover {
   background-color: var(--twt-hover);
+}
+.main .trends-section {
+  width: 100%;
+  display: flex;
+}
+.main .trends-section .header-block {
+  position: fixed;
+  z-index: 997;
+  height: 60px;
+  width: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .trends-section .header-block .fa-magnifying-glass {
+  color: #666b74;
+  position: absolute;
+  left: 55px;
+}
+.main .trends-section .header-block input {
+  background-color: var(--twt-search);
+  color: #9ca4af;
+  border: none;
+  height: 80%;
+  width: 85%;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  padding-left: 50px;
+  outline: none;
+}
+.main .trends-section .trends-content-wrapper {
+  margin-top: 68px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .trends-section .trends-content-wrapper .trends-box {
+  background-color: #16181C;
+  width: 85%;
+  height: auto;
+  border-radius: 15px;
+  padding: 10px 16px;
+}
+.main .trends-section .trends-content-wrapper .trends-box h3 {
+  font-family: "Archivo Black", sans-serif;
+  color: #E7E9EA;
+}
+.main .trends-section .trends-content-wrapper .trends-box .topic {
+  margin: 20px 0 30px 0;
+  height: 50px;
+}
+.main .trends-section .trends-content-wrapper .trends-box .topic p {
+  color: #71767B;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+.main .trends-section .trends-content-wrapper .trends-box .topic p .fa-circle {
+  color: #71767B;
+  margin: 0 5px;
+  font-size: 1px;
+}
+.main .trends-section .trends-content-wrapper .trends-box .topic h4 {
+  color: #E7E9EA;
+  font-size: 0.9rem;
+}
+.main .trends-section .trends-content-wrapper .trends-box .topic .fa-ellipsis {
+  color: var(--twt-usrname);
+  font-size: 0.95rem;
+  position: absolute;
+  right: 50px;
+}
+.main .trends-section .trends-content-wrapper .wtf-box {
+  margin-top: 20px;
+  background-color: #16181C;
+  width: 85%;
+  height: auto;
+  border-radius: 15px;
+  padding: 10px 16px;
+}
+.main .trends-section .trends-content-wrapper .wtf-box h3 {
+  font-family: "Archivo Black", sans-serif;
+  color: #E7E9EA;
 }
 
 @media only screen and (max-width: 1200px) {
