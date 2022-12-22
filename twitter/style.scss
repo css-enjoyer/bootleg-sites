@@ -248,7 +248,6 @@ body {
                         }
                     }
                     .tweet-content-wrapper {
-                        // border: 1px solid lime;
                         height: calc(100% - 56px);
                         padding-bottom: 10px;
                         p {
@@ -261,13 +260,11 @@ body {
                         }
                     }
                     .tweet-buttons-wrapper {
-                        // border: 1px solid lime;
                         height: 28px;
                         display: flex;
                         align-items: center;
                         gap: 80px;
                         div {
-                            // border: 1px solid red;
                             display: flex;
                             align-items: center;
                             gap: 12px;
@@ -374,9 +371,48 @@ body {
                 height: auto;
                 border-radius: 15px;
                 h3 {
-                    margin: 8px auto 8px 15px;
+                    margin: 15px auto 8px 15px;
                     font-family: 'Archivo Black', sans-serif;
                     color: #E7E9EA;
+                }
+                .accounttf {
+                    display: flex;
+                    align-items: center;
+                    height: 80px;
+                    transition: .1s ease-in-out;
+                    &:hover {
+                        background-color: #1D1F23;
+                    }
+                    img {
+                        @include dp-size(50px);
+                        margin: 0 15px;
+                    }
+                    h4 {
+                        color: #E7E9EA;
+                        font-size: .9rem;
+                    }
+                    p {
+                        color: var(--twt-usrname);
+                        font-weight: 200;
+                        font-size: .9rem;
+                    }
+                    button {
+                        height: 30px;
+                        width: 80px;
+                        background-color: white;
+                        color: black;
+                        border: none;
+                        border-radius: 20px;
+                        font-weight: 900;
+                        margin-left: auto;
+                        margin-right: 15px;
+                        &:hover {
+                            background-color: rgb(223, 223, 223);
+                        }
+                    }
+                    &:last-of-type {
+                        margin-bottom: 15px;
+                    }
                 }
             }          
         }
