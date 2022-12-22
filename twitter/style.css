@@ -295,6 +295,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 .main .trends-section .header-block .fa-magnifying-glass {
   color: #666b74;

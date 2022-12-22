@@ -298,6 +298,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: black;
             .fa-magnifying-glass {
                 color: #666b74;
                 position: absolute;
@@ -359,16 +360,16 @@ body {
                 }
             }  
             .wtf-box {
-                h3 {
-                    font-family: 'Archivo Black', sans-serif;
-                    color: #E7E9EA;
-                }
                 margin-top: 20px;
                 background-color: #16181C;
                 width: 85%;
                 height: auto;
                 border-radius: 15px;
                 padding: 10px 16px;
+                h3 {
+                    font-family: 'Archivo Black', sans-serif;
+                    color: #E7E9EA;
+                }
             }          
         }
     }
