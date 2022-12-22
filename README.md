@@ -10,14 +10,14 @@ Click this [link](https://css-enjoyer.github.io/bootleg-sites/) to view the webs
 <details>
 <summary> Finished </summary>
 
-- None (yet) ...
+- Twitter
 
 </details>
 <!--                -->
 <details>
 <summary> Under Development </summary>
 
-- Twitter
+- TBD
 
 </details>
 <!--                -->
