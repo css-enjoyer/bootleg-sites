@@ -16,10 +16,15 @@
   --twt-hover: rgb(8, 8, 8);
   --twt-usrname: rgb(92, 92, 92);
   --twt-search: #202327;
+  --twt-white: #E7E9EA;
 }
 
 body {
   background-color: black;
+}
+
+.fa-circle-check {
+  color: var(--twt-clr) !important;
 }
 
 .main {
@@ -38,6 +43,9 @@ body {
 .main .nav-section {
   display: flex;
   justify-content: center;
+}
+.main .nav-section * {
+  color: var(--twt-white);
 }
 .main .nav-section .wrapper {
   position: fixed;
@@ -390,7 +398,7 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin: 0 15px;
+  margin: 0 10px 0 15px;
 }
 .main .trends-section .trends-content-wrapper .wtf-box .accounttf h4 {
   color: #E7E9EA;
