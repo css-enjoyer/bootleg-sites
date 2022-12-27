@@ -1,1 +1,17 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --ig-grey: #121212;
+  --ig-border: #262626;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--ig-grey);
+}/*# sourceMappingURL=style.css.map */
