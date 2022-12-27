@@ -12,4 +12,16 @@
     height: 100vh;
     width: 100%;
     background-color: var(--ig-grey);
+    display: grid;
+    grid-template-columns: 1fr 4.5fr;
+    .nav-section {
+        height: 100vh;
+        grid-column: 0 / 1;
+        background-color: black;
+        border-right: 1px solid var(--ig-border);
+    }
+    .main-section {
+        height: 100vh;
+        grid-column: 1 / 2;
+    }
 }
