@@ -26,12 +26,12 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 35px 20px;
-  gap: 30px;
+  gap: 25px;
 }
 .main .nav-section .image-logo {
   filter: contrast(0);
   filter: brightness(100);
-  width: 100px;
+  width: 110px;
   margin-bottom: 20px;
 }
 .main .nav-section button {
@@ -41,7 +41,18 @@
 }
 .main .nav-section button i {
   margin-right: 15px;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
+}
+.main .nav-section button img {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.main .nav-section button .fa-bars {
+  margin-top: 50px;
 }
 .main .main-section {
   grid-column: 1/2;

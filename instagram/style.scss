@@ -23,21 +23,31 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 35px 20px;
-        gap: 30px;
+        gap: 25px;
         .image-logo {
             filter: contrast(0);
             filter: brightness(100);
-            width: 100px;
+            width: 110px;
             margin-bottom: 20px;
         }
         button {
-            i {
-                margin-right: 15px;
-                font-size: 1.35rem;
-            }
             background-color: transparent;
             color: white;
             font-size: 1rem;
+            i {
+                margin-right: 15px;
+                font-size: 1.5rem;
+            }
+            img {
+                width: 25px;
+                height: 25px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-right: 15px;
+            }
+            .fa-bars {
+                margin-top: 50px;
+            }
         }
     }
     .main-section {
