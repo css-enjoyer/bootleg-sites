@@ -23,7 +23,11 @@
   background-color: black;
   border-right: 1px solid var(--ig-border);
 }
+.main .nav-section button {
+  background-color: transparent;
+  color: white;
+}
 .main .main-section {
-  height: 100vh;
   grid-column: 1/2;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

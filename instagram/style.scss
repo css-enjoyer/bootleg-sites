@@ -19,9 +19,13 @@
         grid-column: 0 / 1;
         background-color: black;
         border-right: 1px solid var(--ig-border);
+        button {
+            background-color: transparent;
+            color: white;
+        }
     }
     .main-section {
-        height: 100vh;
         grid-column: 1 / 2;
+        display: flex;
     }
 }
