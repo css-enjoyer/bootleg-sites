@@ -25,19 +25,28 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 35px 20px;
-  gap: 25px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 10px;
+  gap: 5px;
 }
 .main .nav-section .image-logo {
   filter: contrast(0);
   filter: brightness(100);
   width: 110px;
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 .main .nav-section button {
   background-color: transparent;
   color: white;
   font-size: 1rem;
+  text-align: left;
+  width: 225px;
+  padding: 12px 10px;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .main .nav-section button i {
   margin-right: 15px;
@@ -51,8 +60,11 @@
   border-radius: 50%;
   margin-right: 15px;
 }
-.main .nav-section button .fa-bars {
-  margin-top: 50px;
+.main .nav-section button:hover {
+  background-color: #121212;
+}
+.main .nav-section .more-btn {
+  margin-top: 38px;
 }
 .main .main-section {
   grid-column: 1/2;
